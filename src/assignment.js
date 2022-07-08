@@ -35,9 +35,19 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  
+    let even = 0;
+  
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        if (i % 2 !== 0){ 
+        even += arrayOfNumbers[i];
+        }
+      }
+  
+     return even;
+  console.log(even)
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
