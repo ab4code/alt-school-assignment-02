@@ -21,7 +21,6 @@ function sumOfNumbers(arrayOfNumbers) {
     sum += arrayOfNumbers[i]
   }
     return sum;
-    console.log(sum)
 }
 assignment.sumOfNumbers = sumOfNumbers;
 
@@ -35,16 +34,10 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-  
-    let even = 0;
-  
-    for (let i = 0; i < arrayOfNumbers.length; i++) {
-         if (arrayOfNumbers[i] % 2 === 0) {
-            even = even + arrayOfNumbers[i];
-          }
-      }
-
-     return even;
+  const even = arrayOfNumbers.filter(num =>{
+    return num % 2 === 0;
+  })
+    return even.length;
 }
 assignment.countEvenNumbers = countEvenNumbers;
 
